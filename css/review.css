@@ -1,0 +1,319 @@
+:root {
+    --drak-blue: #03045e;
+    --light-blue:#00b4d8;
+    --light-color: #666;
+    --box-shadow: 0 5px 7px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    outline: none;
+    border: none;
+  }
+  
+  html {
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    font-size: 62.5%;
+  }
+  
+  body {
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    /* box-shadow: var(--box-shadow); */
+    align-items: center;
+    border-bottom: 1px solid var(--black);
+  }
+
+  
+  header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  header .logo i {
+    background: var(--light-blue);
+  }
+  
+  header .navBar a {
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--drak-blue);
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  header .navBar a.active,
+  header .navBar a:hover {
+    background: var(--light-blue);
+    color: rgb(255, 255, 255);
+  }
+  header .icons i,
+  header .icons a {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--drak-blue);
+    border-radius: 50%;
+    background: #eee;
+    text-decoration: none;
+  }
+  
+  header .icons i:hover,
+  header .icons a:hover {
+    color: #fff;
+    background: var(--light-blue);
+    transform: rotate(360deg);
+  }
+  
+  header .icons #menu-bar {
+    display: none;
+  }
+  
+  #search-form {
+  position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  
+  #search-form.active {
+    top: 0;
+  }
+  .heading1{
+
+    font-family: "Bree Serif", serif;
+    font-size: 35px !important;
+    color: var(--drak-blue);
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 80px;
+  }
+  #search-form #search-box {
+    width: 50rem;
+    border-bottom: 0.1rem solid #fff;
+    padding: 1rem 0;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    font-size: 3rem;
+  }
+  .dynamic-inputs{
+    width: 100%;
+   margin-top: 50px !important;
+  }
+  input {
+    background-color: transparent;
+    font-size: 20px !important;
+    border-bottom: 2px solid #03045e;
+    width: 100%;
+  }
+  #search-form #search-box::placeholder {
+    color: #eee;
+  }
+  
+  #search-form #search-box::-webkit-search-cancel-button {
+    --webkit-appearance: none;
+  }
+  
+  #search-form label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+  }
+  
+  #search-form label:hover {
+    color: var(--light-blue);
+  }
+  
+  #search-form #close {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+  }
+
+
+.cards-container{
+    display: flex;
+    padding: 30px 0px;
+    height: 500px !important;
+    width: 100%;
+}
+
+
+.card{
+    max-height: 350px;
+    width: 25%;
+    margin: 10px 17px ;
+    overflow: hidden;
+    border: silver 2px solid;
+    box-shadow: var(--box-shadow);
+    display: flex;
+}
+
+.rating{
+    margin: 10px 20px;
+}
+.rating span{
+  font-size: 15px;
+  color: var(--drak-blue);
+}
+.card img{
+    margin: 10px;
+    height: 50px;
+    width:50px;
+    border-radius:50%;
+
+}
+.card h1{
+    margin: 10px 20px;
+    font-family: "Bree Serif", serif;
+    font-size: 20px !important;
+    color: #00b4d8;
+     /* text-align: center; */
+}
+.card p{
+    margin: 10px 20px;
+    font-size: 13px;
+}
+
+.heading{
+  font-family: "Bree Serif", serif;
+  font-size: 30px !important;
+  color: var(--drak-blue);
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px !important;
+}
+.headingP{
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 50px;
+}
+.dynamic-inputs{
+    margin:auto;
+    display: flex;
+    flex-direction:column;
+    /* align-items:center; */
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    padding: 20px 10px;
+}
+.dynamic-inputs h1{
+  font-family: "Bree Serif", serif;
+  font-size: 20px !important;
+  color: var(--drak-blue);
+}
+.btnSubmit{
+
+  height: 40px !important;
+  width: 100px;
+  background-color: #03045e !important;
+  color: #fff;
+  font-size: 20px !important;
+  border-radius: 20px !important;
+float: right;
+padding: 5px;
+}
+.btnSubmit:hover {
+  color: #03045e !important;
+  border: 3px solid #03045e !important;
+  background-color: transparent !important;
+}
+.dynamic-inputs input{
+    border-bottom: 2px solid var(--drak-blue);
+    border-radius: 5px;
+}
+.dynamic-inputs input:focus{
+    border-bottom:var(--light-blue) solid 1px;
+    box-shadow:var(--light-blue) 0px 1px 3px;
+}
+.dynamic-inputs h1 {
+    font-size:1rem;
+    margin-top: 10px;
+}
+#description{
+    height: 4rem;
+}
+
+input:invalid{
+    color: rgb(186, 18, 18) ;
+}
+.bg-footer{
+  background-color: #000 !important;
+  color: #fff !important;
+}
+@media (max-width: 786px) {
+  header .icons #menu-bar {
+    display: inline-block;
+  }
+
+  header .navBar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navBar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navBar a {
+    display: block;
+    font-size: 2rem;
+    background: #eee;
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  #search-form #search-box {
+    width: 90%;
+    margin: 0 1rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
